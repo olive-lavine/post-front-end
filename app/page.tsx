@@ -48,7 +48,7 @@ export default async function Home() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {Object.entries(availableStates).map(([state, abbreviation]) => (
-              <Link key={state} href={`/states/${abbreviation}`} text-lg>
+              <Link key={state} href={`/${abbreviation}/info`} text-lg>
                 <button className="w-40 h-full rounded-md border hover:bg-gray-100  border-gray-800 dark:bg-slate-600 dark:hover:bg-slate-800 dark:hover:border-gray-600">
                   {state}
                 </button>
